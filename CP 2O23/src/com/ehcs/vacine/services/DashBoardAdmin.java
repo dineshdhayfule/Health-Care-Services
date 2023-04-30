@@ -92,8 +92,8 @@ public class DashBoardAdmin extends JFrame {
 		scrollPane_4.setViewportView(table_2);
 		jd.ShowDataInJtable("select * from registration",table_2);
 		
-		JLabel lblNewLabel_3_2 = new JLabel("Coronavirus disease (COVID-19): Vaccines");
-		lblNewLabel_3_2.setBounds(131, 5, 655, 44);
+		JLabel lblNewLabel_3_2 = new JLabel("E-HEALTH CARE SERVICES\r\n");
+		lblNewLabel_3_2.setBounds(258, 0, 355, 44);
 		lblNewLabel_3_2.setForeground(Color.WHITE);
 		lblNewLabel_3_2.setFont(new Font("Perpetua Titling MT", Font.BOLD, 25));
 		contentPane.add(lblNewLabel_3_2);
@@ -215,8 +215,8 @@ public class DashBoardAdmin extends JFrame {
 		lblNewLabel_1.setBounds(10, 11, 215, 42);
 		panel.add(lblNewLabel_1);
 		
-		JLabel lblNewLabel_3 = new JLabel("New label");
-		lblNewLabel_3.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\vaccine\\low_poly_banner_design_1711.jpg"));
+		JLabel lblNewLabel_3 = new JLabel("");
+		lblNewLabel_3.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\vaccine\\blue_gradient_bg.jpg"));
 		lblNewLabel_3.setBounds(0, 59, 926, 591);
 		contentPane.add(lblNewLabel_3);
 		

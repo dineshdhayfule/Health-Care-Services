@@ -1,6 +1,6 @@
 package com.ehcs.vacine.dao;
 
-import java.sql.*; 
+import java.sql.*;
 import java.sql.Statement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,7 +10,8 @@ import javax.swing.JOptionPane;
 import com.ehcs.main.Select_Page;
 import com.ehcs.vacine.services.Login;
 
-public class DataBase {
+public class DataBase 
+{
 	private static String url = "jdbc:oracle:thin:@localhost:1521:xe";
 	private static String user = "system";
 	private static String pass = "root";
@@ -72,13 +73,9 @@ public class DataBase {
 		ResultSet rs = null;
 		int b = 0;
 		try {
-
 			Class.forName(driver);
-
 			con = DriverManager.getConnection(url, user, pass);
-
 			stmt = con.createStatement();
-
 			sql = "select  PASSWORD ,FNAME  from registration where AADHAR = ? ";
 			stm = con.prepareStatement(sql);
 			stm.setString(1, adhar);
@@ -86,18 +83,18 @@ public class DataBase {
 			if (rs.next() == false) {
 				b = 1;
 			} else {
-
 				do {
 					pas = rs.getString(1);
 					name = rs.getString(2);
 				} while (rs.next());
 			}
-			if (pas.equals(pa)) {
+			if (pa.equals(pas)) {
 				JOptionPane.showMessageDialog(null, "Welcome  " + name);
 				Login n = new Login();
 				Select_Page pg = new Select_Page(adhar);
 				pg.setVisible(true);
 				n.setVisible(false);
+				b=3;
 			} else {
 				b = 2;
 			}
@@ -121,11 +118,8 @@ public class DataBase {
 		try {
 
 			Class.forName(driver);
-
 			con = DriverManager.getConnection(url, user, pass);
-
 			stmt = con.createStatement();
-
 			String sql = "select FNAME ,LNAME,EMAIL,PHONE,GENDER, ADDRESS , DOB ,PASSWORD from registration where AADHAR = ? ";
 			stm = con.prepareStatement(sql);
 			stm.setString(1, adhar);
@@ -145,7 +139,6 @@ public class DataBase {
 			name = fname + " " + lname;
 
 		} catch (NumberFormatException e) {
-
 			JOptionPane.showMessageDialog(null, "Enter Only Numbers  ");
 		} catch (Exception e) {
 
@@ -161,13 +154,9 @@ public class DataBase {
 		int a = 0;
 
 		try {
-
 			Class.forName(driver);
-
 			con = DriverManager.getConnection(url, user, pass);
-
 			stmt = con.createStatement();
-
 			String sql = "UPDATE registration SET FNAME = ? , LNAME = ? ,PHONE = ? ,EMAIL = ? , DOB = ? , ADDRESS = ?   where AADHAR = ? ";
 			stm = con.prepareStatement(sql);
 			stm.setString(7, Adhar);
@@ -191,13 +180,9 @@ public class DataBase {
 		int a = 0;
 
 		try {
-
 			Class.forName(driver);
-
 			con = DriverManager.getConnection(url, user, pass);
-
 			stmt = con.createStatement();
-
 			String sql = "UPDATE registration SET PASSWORD = ?  where AADHAR = ? ";
 			stm = con.prepareStatement(sql);
 			stm.setString(2, Adhar);
@@ -221,11 +206,8 @@ public class DataBase {
 		try {
 
 			Class.forName(driver);
-
 			con = DriverManager.getConnection(url, user, pass);
-
 			stmt = con.createStatement();
-
 			String sql = "select VACCINE_NAME,SLOTS from Vaccine_slots where CENTER_NAME = ?";
 			stm = con.prepareStatement(sql);
 			stm.setString(1, center);
@@ -272,11 +254,8 @@ public class DataBase {
 		try {
 
 			Class.forName(driver);
-
 			con = DriverManager.getConnection(url, user, pass);
-
 			stmt = con.createStatement();
-
 			sql = "select FIRST_DOSE,FIRST_DOSE_DATE,	SECOND_DOSE,SECON_DOSE_DATE , BOOSTER_DOSE,BOOSTER_DOSE_DATE from CovidVaccinabooking where AADHAR = ? ";
 			stm = con.prepareStatement(sql);
 			stm.setString(1, Adhar);
@@ -324,20 +303,25 @@ public class DataBase {
 //				}
 
 			}
-			else if (FIRST_DOSE.equals("Taken") && SECOND_DOSE.equals("Taken")) {
+			else if (FIRST_DOSE.equals("Taken") && SECOND_DOSE.equals("Taken") && BOOSTER_DOSE == null ) {
 //				SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy", Locale.ENGLISH);
 //				java.util.Date date1 = sdf.parse(FIRST_DOSE_DATE);
 //				java.util.Date date2 = sdf.parse(date);
 //				long diffInMillies = Math.abs(date2.getTime() - date1.getTime());
 //				long diff = TimeUnit.DAYS.convert(diffInMillies, TimeUnit.MILLISECONDS);
-//				if (diff == 31) {
+//				if (diff == 80) {
 		sql = "UPDATE CovidVaccinabooking set VACCINE = ? ,BOOSTER_DOSE= ?,BOOSTER_DOSE_DATE=?,CENTER = ? where AADHAR = ? ";
 //				} else {
 //					JOptionPane.showMessageDialog(null,
 //							"YOU CANT BOOK BOOSTER_DOSE VACCINE Until 31 Days ARE COMPLETE FROM YOUR 1ST VACCINE ");
 //				}
-
 			}
+			else if (FIRST_DOSE.equals("Taken") && SECOND_DOSE.equals("Taken") && BOOSTER_DOSE.equals("Taken") ) 
+			{
+				JOptionPane.showMessageDialog(null, "You Had Taken Both Vaccine & BOOSTER_DOSE  You Cant Book Vaccine NOW");
+	
+			}
+			
 			else {
 				JOptionPane.showMessageDialog(null, "You Had Taken Both Vaccine You Cant Book Vaccine NOW");
 			}
@@ -352,7 +336,6 @@ public class DataBase {
 			if (a == 1) {
 				JOptionPane.showMessageDialog(null, "Your  Vaccine Has Been Booked on  " + date);
 			}
-
 		} catch (Exception e1) {
 			JOptionPane.showMessageDialog(null, e1);
 		}
@@ -368,22 +351,16 @@ public class DataBase {
 		try {
 
 			Class.forName(driver);
-
 			con = DriverManager.getConnection(url, user, pass);
-
 			stmt = con.createStatement();
-
 			bookingCheck(Adhar);
 
 		if (FIRST_DOSE.equals("Booked") && SECOND_DOSE == null) 
 			{
-
 				sql = "UPDATE CovidVaccinabooking set FIRST_DOSE = ?  where AADHAR = ? ";
-
 			}
 		else if (FIRST_DOSE.equals("Taken") && SECOND_DOSE == null) 
 			{
-	
 					JOptionPane.showMessageDialog(null, "SECOND_DOSE not booked");
 			}
 	   else if (FIRST_DOSE.equals("Taken") && SECOND_DOSE.equals("Booked")) 
@@ -394,15 +371,17 @@ public class DataBase {
   		{
 	   		sql = "UPDATE CovidVaccinabooking set BOOSTER_DOSE = ?  where AADHAR = ? ";
 		}
+	   else if (FIRST_DOSE.equals("Taken") && SECOND_DOSE.equals("Taken")&& BOOSTER_DOSE.equals("Taken")) 
+ 		{
+			JOptionPane.showMessageDialog(null,"He/she Had Taken Both Vaccine You Cant Mark as Vaccine Taken  NOW");
+		}
 	   else {
-				JOptionPane.showMessageDialog(null,
-						"He/she Had Taken Both Vaccine You Cant Mark as Vaccine Taken  NOW");
+				JOptionPane.showMessageDialog(null,"He/she Had Taken Both Vaccine You Cant Mark as Vaccine Taken  NOW");
 			}
 			stm = con.prepareStatement(sql);
 			stm.setString(2, Adhar);
 			stm.setString(1, "Taken");
 			a = stm.executeUpdate();
-
 		} catch (Exception g) {
 		}
 		return a;

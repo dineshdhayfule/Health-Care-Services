@@ -79,10 +79,10 @@ public int OTP=0;
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNewLabel_3 = new JLabel("Coronavirus disease (COVID-19): Vaccine");
+		JLabel lblNewLabel_3 = new JLabel("E-HEALTH CARE SERVICES\r\n");
 		lblNewLabel_3.setForeground(Color.WHITE);
 		lblNewLabel_3.setFont(new Font("Perpetua Titling MT", Font.BOLD, 25));
-		lblNewLabel_3.setBounds(127, 11, 655, 44);
+		lblNewLabel_3.setBounds(294, 11, 354, 44);
 		contentPane.add(lblNewLabel_3);
 		
 		JLabel lblNewLabel_2 = new JLabel("New label");
@@ -94,8 +94,8 @@ public int OTP=0;
 		ArrayList al = new  ArrayList();
 		
 		JLabel lblNewLabel_1_1 = new JLabel("First Name");
-		lblNewLabel_1_1.setBounds(143, 169, 68, 17);
-		lblNewLabel_1_1.setFont(new Font("Times New Roman", Font.BOLD, 14));
+		lblNewLabel_1_1.setBounds(143, 169, 83, 31);
+		lblNewLabel_1_1.setFont(new Font("Tahoma", Font.BOLD, 15));
 		
 		fname = new JTextField();
 		fname.setBounds(250, 168, 159, 20);
@@ -104,7 +104,7 @@ public int OTP=0;
 		
 		JLabel lblNewLabel_1_3_1 = new JLabel(" Phone No");
 		lblNewLabel_1_3_1.setBounds(143, 210, 93, 28);
-		lblNewLabel_1_3_1.setFont(new Font("Times New Roman", Font.BOLD, 14));
+		lblNewLabel_1_3_1.setFont(new Font("Tahoma", Font.BOLD, 15));
 		
 		phno = new JTextField();
 		phno.setBounds(250, 215, 159, 20);
@@ -113,7 +113,7 @@ public int OTP=0;
 		
 		JLabel lblNewLabel_1_3_2 = new JLabel(" DOB :");
 		lblNewLabel_1_3_2.setBounds(143, 268, 93, 28);
-		lblNewLabel_1_3_2.setFont(new Font("Times New Roman", Font.BOLD, 14));
+		lblNewLabel_1_3_2.setFont(new Font("Tahoma", Font.BOLD, 15));
 		
 		dob = new JTextField();
 		dob.setBounds(250, 273, 159, 20);
@@ -121,8 +121,8 @@ public int OTP=0;
 		dob.setText(db.dob);
 		
 		JLabel lblNewLabel_1 = new JLabel("Last Name");
-		lblNewLabel_1.setBounds(493, 163, 93, 28);
-		lblNewLabel_1.setFont(new Font("Times New Roman", Font.BOLD, 14));
+		lblNewLabel_1.setBounds(473, 170, 93, 28);
+		lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 15));
 		
 		lname = new JTextField();
 		lname.setBounds(577, 168, 159, 20);
@@ -130,8 +130,8 @@ public int OTP=0;
 		lname.setText(db.lname);
 		
 		JLabel lblNewLabel_1_3 = new JLabel(" Email ID");
-		lblNewLabel_1_3.setBounds(493, 210, 93, 28);
-		lblNewLabel_1_3.setFont(new Font("Times New Roman", Font.BOLD, 14));
+		lblNewLabel_1_3.setBounds(473, 210, 93, 28);
+		lblNewLabel_1_3.setFont(new Font("Tahoma", Font.BOLD, 15));
 		
 		email = new JTextField();
 		email.setBounds(577, 215, 159, 20);
@@ -139,9 +139,9 @@ public int OTP=0;
 		email.setText(db.EMAIL);
 		
 		JLabel lblNewLabel_7 = new JLabel("Address");
-		lblNewLabel_7.setBounds(493, 269, 93, 26);
-		lblNewLabel_7.setForeground(Color.DARK_GRAY);
-		lblNewLabel_7.setFont(new Font("Times New Roman", Font.BOLD, 14));
+		lblNewLabel_7.setBounds(473, 267, 93, 26);
+		lblNewLabel_7.setForeground(new Color(0, 0, 0));
+		lblNewLabel_7.setFont(new Font("Tahoma", Font.BOLD, 15));
 		
 		add = new JTextField();
 		add.setBounds(577, 273, 159, 20);
@@ -198,9 +198,9 @@ public int OTP=0;
 		
 		JLabel lblNewLabel_5 = new JLabel("  Edit Your Profile ");
 		lblNewLabel_5.setOpaque(true);
-		lblNewLabel_5.setFont(new Font("Times New Roman", Font.BOLD, 19));
+		lblNewLabel_5.setFont(new Font("Tahoma", Font.BOLD, 19));
 		lblNewLabel_5.setBorder(new MatteBorder(3, 3, 3, 3, (Color) new Color(0, 0, 0)));
-		lblNewLabel_5.setBounds(342, 79, 164, 35);
+		lblNewLabel_5.setBounds(342, 79, 218, 35);
 		contentPane.add(lblNewLabel_5);
 		
 		JLabel lblNewLabel = new JLabel("  Edit Your Profile ");
@@ -231,7 +231,7 @@ public int OTP=0;
 		contentPane.add(lblNewLabel_6);
 		
 		JLabel lblNewLabel_8 = new JLabel("New label");
-		lblNewLabel_8.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\vaccine\\low_poly_banner_design_1711.jpg"));
+		lblNewLabel_8.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\vaccine\\water-1330252_1280.jpg"));
 		lblNewLabel_8.setBounds(0, 54, 928, 596);
 		contentPane.add(lblNewLabel_8);
 		btnNewButton.addActionListener(new ActionListener() {

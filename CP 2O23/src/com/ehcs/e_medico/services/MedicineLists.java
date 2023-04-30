@@ -78,7 +78,7 @@ public class MedicineLists extends JFrame {
 			}
 		});
 	
-		Diazepam_bt.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 19));
+		Diazepam_bt.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 19));
 		Diazepam_bt.setBorderPainted(false);
 		Diazepam_bt.setBackground(Color.WHITE);
 		Diazepam_bt.setBounds(752, 496, 121, 45);
@@ -115,7 +115,7 @@ public class MedicineLists extends JFrame {
 
 			}
 		});
-		btnNewButton_3_1.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 19));
+		btnNewButton_3_1.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 19));
 		btnNewButton_3_1.setBorderPainted(false);
 		btnNewButton_3_1.setBackground(Color.WHITE);
 		btnNewButton_3_1.setBounds(734, 198, 162, 45);
@@ -141,7 +141,7 @@ public class MedicineLists extends JFrame {
 			}
 		});
 		btnBack.setForeground(Color.BLACK);
-		btnBack.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 30));
+		btnBack.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 30));
 		btnBack.setBorderPainted(false);
 		btnBack.setBackground(Color.WHITE);
 		
@@ -195,7 +195,7 @@ public class MedicineLists extends JFrame {
 		JButton btnNewButton = new JButton("NISE");
 		btnNewButton.setBackground(new Color(255, 255, 255));
 		btnNewButton.setBorderPainted(false);
-		btnNewButton.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 19));
+		btnNewButton.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 19));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
@@ -230,7 +230,7 @@ public class MedicineLists extends JFrame {
 		JButton btnNewButton_1 = new JButton("VOMITEB");
 		btnNewButton_1.setBackground(new Color(255, 255, 255));
 		btnNewButton_1.setBorderPainted(false);
-		btnNewButton_1.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 19));
+		btnNewButton_1.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 19));
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
@@ -265,7 +265,7 @@ public class MedicineLists extends JFrame {
 		JButton btnNewButton_2 = new JButton("CROCIN");
 		btnNewButton_2.setBackground(new Color(255, 255, 255));
 		btnNewButton_2.setBorderPainted(false);
-		btnNewButton_2.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 19));
+		btnNewButton_2.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 19));
 		btnNewButton_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
@@ -299,7 +299,7 @@ public class MedicineLists extends JFrame {
 		JButton btnNewButton_3 = new JButton("SINAREST");
 		btnNewButton_3.setBorderPainted(false);
 		btnNewButton_3.setBackground(new Color(255, 255, 255));
-		btnNewButton_3.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 19));
+		btnNewButton_3.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 19));
 		btnNewButton_3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
@@ -331,7 +331,7 @@ public class MedicineLists extends JFrame {
 		JButton btnNewButton_4 = new JButton("CHESTON-COLD");
 		btnNewButton_4.setBackground(new Color(255, 255, 255));
 		btnNewButton_4.setBorderPainted(false);
-		btnNewButton_4.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 19));
+		btnNewButton_4.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 19));
 		btnNewButton_4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
@@ -363,7 +363,7 @@ public class MedicineLists extends JFrame {
 		JButton btnNewButton_5 = new JButton("AZIPRO-500");
 		btnNewButton_5.setBackground(new Color(255, 255, 255));
 		btnNewButton_5.setBorderPainted(false);
-		btnNewButton_5.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 21));
+		btnNewButton_5.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 21));
 		btnNewButton_5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
@@ -396,7 +396,7 @@ public class MedicineLists extends JFrame {
 		JButton btnNewButton_6 = new JButton("CYCLOPAM");
 		btnNewButton_6.setBackground(new Color(240, 240, 240));
 		btnNewButton_6.setBorderPainted(false);
-		btnNewButton_6.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 19));
+		btnNewButton_6.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 19));
 		btnNewButton_6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
@@ -429,7 +429,7 @@ public class MedicineLists extends JFrame {
 		JButton btnNewButton_7 = new JButton("TUS-Q");
 		btnNewButton_7.setBackground(new Color(255, 255, 255));
 		btnNewButton_7.setBorderPainted(false);
-		btnNewButton_7.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 19));
+		btnNewButton_7.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 19));
 		btnNewButton_7.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
@@ -456,7 +456,7 @@ public class MedicineLists extends JFrame {
 		JButton btnNewButton_8 = new JButton("View Cart");
 		btnNewButton_8.setBorderPainted(false);
 		btnNewButton_8.setBackground(Color.WHITE);
-		btnNewButton_8.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 28));
+		btnNewButton_8.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 28));
 		btnNewButton_8.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{	
@@ -464,7 +464,7 @@ public class MedicineLists extends JFrame {
 				c.setVisible(true);
 			}
 		});
-		btnNewButton_8.setBounds(609, 593, 165, 40);
+		btnNewButton_8.setBounds(596, 593, 178, 40);
 		contentPane.add(btnNewButton_8);
 		
 		

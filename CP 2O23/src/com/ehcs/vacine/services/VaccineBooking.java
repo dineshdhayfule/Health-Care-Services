@@ -74,10 +74,10 @@ public class VaccineBooking extends JFrame {
 		lblNewLabel_7.setBounds(738, 452, 54, 44);
 		contentPane.add(lblNewLabel_7);
 		
-		JLabel lblNewLabel_3_2 = new JLabel("Coronavirus disease (COVID-19): Vaccine");
+		JLabel lblNewLabel_3_2 = new JLabel("E-HEALTH CARE SERVICES");
 		lblNewLabel_3_2.setForeground(Color.WHITE);
 		lblNewLabel_3_2.setFont(new Font("Perpetua Titling MT", Font.BOLD, 25));
-		lblNewLabel_3_2.setBounds(83, 11, 655, 44);
+		lblNewLabel_3_2.setBounds(280, 10, 347, 44);
 		contentPane.add(lblNewLabel_3_2);
 		
 		JLabel lblNewLabel_2 = new JLabel("New label");
@@ -86,26 +86,29 @@ public class VaccineBooking extends JFrame {
 		contentPane.add(lblNewLabel_2);
 		
 		JLabel lblNewLabel = new JLabel("Enter Your Phone NO");
-		lblNewLabel.setFont(new Font("Times New Roman", Font.BOLD, 14));
-		lblNewLabel.setBounds(185, 169, 141, 14);
+		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 16));
+		lblNewLabel.setBounds(176, 212, 177, 19);
 		contentPane.add(lblNewLabel);
 		
 		phno = new JTextField();
-		phno.setBounds(385, 167, 154, 20);
+		phno.setBounds(390, 208, 177, 23);
 		contentPane.add(phno);
 		phno.setColumns(10);
 		
 		JLabel lblNewLabel_1 = new JLabel("Select Your Vaccine");
-		lblNewLabel_1.setFont(new Font("Times New Roman", Font.BOLD, 14));
-		lblNewLabel_1.setBounds(185, 223, 141, 19);
+		lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 16));
+		lblNewLabel_1.setBounds(176, 275, 168, 19);
 		contentPane.add(lblNewLabel_1);
 		
 		JRadioButton rdbtnNewRadioButton = new JRadioButton("Covishild");
-		rdbtnNewRadioButton.setBounds(385, 222, 96, 23);
+		rdbtnNewRadioButton.setForeground(new Color(0, 0, 0));
+		rdbtnNewRadioButton.setFont(new Font("Tahoma", Font.BOLD, 13));
+		rdbtnNewRadioButton.setBounds(392, 275, 105, 25);
 		contentPane.add(rdbtnNewRadioButton);
 		
 		JRadioButton rdbtnNewRadioButton_1 = new JRadioButton("Covaxin");
-		rdbtnNewRadioButton_1.setBounds(385, 254, 96, 23);
+		rdbtnNewRadioButton_1.setFont(new Font("Tahoma", Font.BOLD, 13));
+		rdbtnNewRadioButton_1.setBounds(392, 313, 105, 23);
 		contentPane.add(rdbtnNewRadioButton_1);
 		
 		ButtonGroup group = new ButtonGroup();
@@ -114,30 +117,31 @@ public class VaccineBooking extends JFrame {
 		
 		JLabel pno_error = new JLabel("New label");
 		pno_error.setForeground(Color.RED);
-		pno_error.setBounds(567, 169, 163, 17);
+		pno_error.setBounds(575, 212, 163, 17);
 		pno_error.setVisible(false);
 		contentPane.add(pno_error);
 		
 		JLabel lblNewLabel_5 = new JLabel("*Select Center");
 		lblNewLabel_5.setForeground(Color.RED);
-		lblNewLabel_5.setBounds(555, 312, 116, 14);
+		lblNewLabel_5.setBounds(567, 382, 116, 14);
 		lblNewLabel_5.setVisible(false);
 		contentPane.add(lblNewLabel_5);
 		
 		JLabel vaccine_error1 = new JLabel("New label");
 		vaccine_error1.setForeground(Color.RED);
-		vaccine_error1.setBounds(511, 243, 116, 14);
+		vaccine_error1.setBounds(529, 279, 116, 14);
 		vaccine_error1.setVisible(false);
 		contentPane.add(vaccine_error1);
 		
 		JComboBox comboBox = new JComboBox();
+		comboBox.setFont(new Font("Tahoma", Font.BOLD, 13));
 		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Select Center", "CNS Hospital", "Shiv Santoshi Hospital", "CIVIL Hospital", ""}));
-		comboBox.setBounds(387, 308, 131, 22);
+		comboBox.setBounds(390, 371, 135, 34);
 		contentPane.add(comboBox);
 		
 		
 		JButton btnNewButton = new JButton("BOOK ");
-		btnNewButton.setFont(new Font("Times New Roman", Font.BOLD, 16));
+		btnNewButton.setFont(new Font("Arial Black", Font.BOLD, 17));
 		btnNewButton.setForeground(Color.BLACK);
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -196,14 +200,16 @@ public class VaccineBooking extends JFrame {
 					c=1;
 			}
 			if(c==0) {
+				   DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd");  
+				   LocalDateTime now = LocalDateTime.now(); 
 				Db.getDetails( Adhar);
-				boolean b=SendOTP.sendOTP(Db.name + " Your Booking Is Successfully Booked  :" ,Db.EMAIL," Vaccine Successfully Booked ");
+				boolean b=SendOTP.sendOTP("Dear "+Db.name + " Your Vaccine Is Successfully Booked  on : "+dtf.format(now) ,Db.EMAIL,"Vaccine Status");
 				if(b==false) {
 					JOptionPane.showMessageDialog(null, "Unsuccessful To Send An OTP  ");
 				}else {
-					DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd");  
-					   LocalDateTime now = LocalDateTime.now();   
-					Db.avaiblity(vaccine , comboBox.getSelectedItem().toString(),Adhar,dtf.format(now));
+//						DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd");  
+//					   LocalDateTime now = LocalDateTime.now();   
+					  Db.avaiblity(vaccine , comboBox.getSelectedItem().toString(),Adhar,dtf.format(now));
 				}
 				
 			
@@ -214,18 +220,18 @@ public class VaccineBooking extends JFrame {
 			}
 			
 		});
-		btnNewButton.setBounds(328, 394, 96, 34);
+		btnNewButton.setBounds(367, 462, 116, 49);
 		contentPane.add(btnNewButton);
 		
 		
 		
 		JLabel lblNewLabel_3 = new JLabel("Select Your Center ");
-		lblNewLabel_3.setFont(new Font("Times New Roman", Font.BOLD, 14));
-		lblNewLabel_3.setBounds(185, 311, 141, 14);
+		lblNewLabel_3.setFont(new Font("Tahoma", Font.BOLD, 16));
+		lblNewLabel_3.setBounds(176, 380, 168, 14);
 		contentPane.add(lblNewLabel_3);
 		
 		JLabel lblNewLabel_4 = new JLabel("Vaccine Booking");
-		lblNewLabel_4.setFont(new Font("Times New Roman", Font.BOLD, 16));
+		lblNewLabel_4.setFont(new Font("Arial", Font.BOLD, 17));
 		lblNewLabel_4.setBounds(351, 109, 141, 34);
 		contentPane.add(lblNewLabel_4);
 		
@@ -234,13 +240,8 @@ public class VaccineBooking extends JFrame {
 		lblNewLabel_4_1.setBorder(new MatteBorder(3, 3, 3, 3, (Color) new Color(0, 0, 0)));
 		lblNewLabel_4_1.setIcon(null);
 		lblNewLabel_4_1.setFont(new Font("Times New Roman", Font.BOLD, 16));
-		lblNewLabel_4_1.setBounds(321, 109, 191, 34);
+		lblNewLabel_4_1.setBounds(321, 104, 193, 49);
 		contentPane.add(lblNewLabel_4_1);
-		
-		JSeparator separator = new JSeparator();
-		separator.setBorder(new MatteBorder(3, 3, 3, 3, (Color) new Color(0, 0, 0)));
-		separator.setBounds(100, 140, 628, 371);
-		contentPane.add(separator);
 		
 		JLabel lblNewLabel_4_1_1 = new JLabel("");
 		lblNewLabel_4_1_1.addMouseListener(new MouseAdapter() {
@@ -255,8 +256,8 @@ public class VaccineBooking extends JFrame {
 		lblNewLabel_4_1_1.setBounds(691, 553, 47, 44);
 		contentPane.add(lblNewLabel_4_1_1);
 		
-		JLabel lblNewLabel_6 = new JLabel("New label");
-		lblNewLabel_6.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\vaccine\\low_poly_banner_design_1711.jpg"));
+		JLabel lblNewLabel_6 = new JLabel("");
+		lblNewLabel_6.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\vaccine\\VaccBook (Custom).jpg"));
 		lblNewLabel_6.setBounds(0, 55, 926, 595);
 		contentPane.add(lblNewLabel_6);
 		

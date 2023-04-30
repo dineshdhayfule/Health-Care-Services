@@ -13,6 +13,7 @@ import java.awt.Font;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Color;
+import javax.swing.border.LineBorder;
 
 public class Start_Page extends JFrame {
 
@@ -47,7 +48,8 @@ public class Start_Page extends JFrame {
 		
 		JButton btnNewButton = new JButton("Signup");
 		btnNewButton.setBorderPainted(false);
-		btnNewButton.setBackground(new Color(255, 0, 0));
+		btnNewButton.setBorder(new LineBorder(new Color(0, 0, 0), 3));
+		btnNewButton.setBackground(new Color(0, 204, 255));
 		btnNewButton.setBackground(new Color(0, 191, 255));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
@@ -69,15 +71,20 @@ public class Start_Page extends JFrame {
 				setVisible(false);
 			}
 		});
+		
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\logo.jpg"));
+		lblNewLabel.setBounds(556, -20, 533, 320);
+		contentPane.add(lblNewLabel);
 		btnNewButton_1.setBounds(808, 616,  154, 79);
-		btnNewButton_1.setFont(new Font("Tahoma", Font.PLAIN, 23));
+		btnNewButton_1.setFont(new Font("Tahoma", Font.BOLD, 23));
 		contentPane.add(btnNewButton_1);
-		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 23));
+		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 23));
 		btnNewButton.setBounds(556, 616, 154, 79);
 		contentPane.add(btnNewButton);
 		
 		JLabel lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\E Medico\\Home Page 1 (Medium).jpeg"));
+		lblNewLabel_1.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\Home Page.png"));
 		lblNewLabel_1.setLocation(0, -20);
 		lblNewLabel_1.setSize(1011,768);
 		contentPane.add(lblNewLabel_1);

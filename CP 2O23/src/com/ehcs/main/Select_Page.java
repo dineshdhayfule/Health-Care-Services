@@ -69,7 +69,7 @@ public class Select_Page extends JFrame {
 		JLabel lblNewLabel_3_2 = new JLabel("E-HEALTH CARE SERVICES ");
 		lblNewLabel_3_2.setForeground(Color.WHITE);
 		lblNewLabel_3_2.setFont(new Font("Dialog", Font.BOLD, 25));
-		lblNewLabel_3_2.setBounds(230, 0, 389, 44);
+		lblNewLabel_3_2.setBounds(294, 0, 389, 44);
 		contentPane.add(lblNewLabel_3_2);
 		
 		JLabel lblNewLabel_2_1 = new JLabel("");
@@ -80,13 +80,13 @@ public class Select_Page extends JFrame {
 		JLabel lblNewLabel_2 = new JLabel("");
 		lblNewLabel_2.setBorder(new LineBorder(new Color(0, 0, 0), 3));
 		lblNewLabel_2.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\vaccine\\let-s-get-vaccinated.jpg"));
-		lblNewLabel_2.setBounds(75, 82, 395, 431);
+		lblNewLabel_2.setBounds(45, 82, 395, 431);
 		contentPane.add(lblNewLabel_2);
 		btnNewButton.setBounds(495, 537,  395, 47);
 		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 23));
 		contentPane.add(btnNewButton);
 		JButton btnVaccine = new JButton("BOOK VACCINE ");
-		btnVaccine.setBackground(new Color(72, 209, 204));
+		btnVaccine.setBackground(new Color(0, 255, 255));
 		btnVaccine.setBorderPainted(false);
 		
 		btnVaccine.addActionListener(new ActionListener() {
@@ -98,11 +98,11 @@ public class Select_Page extends JFrame {
 			}
 		});
 		btnVaccine.setFont(new Font("Tahoma", Font.PLAIN, 23));
-		btnVaccine.setBounds(75, 537, 395, 47);
+		btnVaccine.setBounds(45, 537, 395, 47);
 		contentPane.add(btnVaccine);
 
 		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\vaccine\\low_poly_banner_design_1711.jpg"));
+		lblNewLabel.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\E Medico\\Login Bg.jpg"));
 		lblNewLabel.setBounds(0, 54, 924, 594);
 		contentPane.add(lblNewLabel);
 	}

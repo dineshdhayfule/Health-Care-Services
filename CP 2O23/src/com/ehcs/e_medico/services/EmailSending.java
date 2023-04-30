@@ -11,6 +11,7 @@ import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+import javax.swing.JOptionPane;
 
 public class EmailSending {
 	public void sendEmail(String to,ArrayList ar,ArrayList ar1)
@@ -64,6 +65,8 @@ public class EmailSending {
 		finally
 		{
 			System.out.println("Completed");
+			JOptionPane.showMessageDialog(null,"E-mail has been sended!");
+
 		}
 	}
 }

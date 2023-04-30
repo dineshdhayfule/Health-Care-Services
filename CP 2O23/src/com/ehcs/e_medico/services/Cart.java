@@ -13,17 +13,21 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.border.LineBorder;
+
+import com.ehcs.vacine.services.Login;
+
 import java.awt.Font;
 import javax.swing.ImageIcon;
 import javax.swing.border.BevelBorder;
 import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 import javax.swing.SwingConstants;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class Cart extends JFrame {
 
 	private static final long serialVersionUID = -2409059355684017614L;
-	private JPanel contentPane;
 	static String name;
 	static String adrress;
 	static String email;
@@ -41,13 +45,27 @@ public class Cart extends JFrame {
 		ab1=a1;
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(400, 0, 950, 800);
-		contentPane = new JPanel();
+		JPanel contentPane = new JPanel();
 		contentPane.setBorder(new LineBorder(new Color(0, 0, 0)));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
+		
+		JLabel lblNewLabel_4_1_1 = new JLabel("");
+		lblNewLabel_4_1_1.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) 
+			{
+				Login h = new Login();
+				h.setVisible(true);
+				setVisible(false);
+			}
+		});
+		lblNewLabel_4_1_1.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\vaccine\\back.jpg"));
+		lblNewLabel_4_1_1.setBounds(833, 674, 47, 44);
+		contentPane.add(lblNewLabel_4_1_1);
 
 		JPanel panel = new JPanel();
-		panel.setBorder(new LineBorder(new Color(0, 0, 0), 6));
+		panel.setBorder(new LineBorder(new Color(0, 0, 0), 2));
 //		panel.setBounds(149, 155, 649, 451);
 //		contentPane.add(panel);
 		
@@ -81,14 +99,14 @@ public class Cart extends JFrame {
 		
 		JLabel label = new JLabel("" + sum);
 		label.setBorder(new LineBorder(new Color(0, 0, 0), 3));
-		label.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 21));
+		label.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 21));
 		label.setBounds(713, 626, 85, 36);
 		label.setAlignmentX(Component.RIGHT_ALIGNMENT);
 		contentPane.add(label);
 
 		JLabel lblNewLabel = new JLabel("Total Price ");
 		lblNewLabel.setBorder(new LineBorder(new Color(0, 0, 0), 3));
-		lblNewLabel.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 21));
+		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 21));
 		lblNewLabel.setBounds(149, 626, 113, 36);
 		contentPane.add(lblNewLabel);
 
@@ -98,13 +116,13 @@ public class Cart extends JFrame {
 		contentPane.add(panel_1);
 		panel_1.setLayout(null);
 
-		JLabel lblNewLabel_1 = new JLabel("E- MEDICO");
-		lblNewLabel_1.setFont(new Font("Times New Roman", Font.PLAIN, 35));
-		lblNewLabel_1.setBounds(404, 25, 200, 58);
+		JLabel lblNewLabel_1 = new JLabel("E-HEALTH CARE SERVICES ");
+		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 35));
+		lblNewLabel_1.setBounds(256, 10, 467, 58);
 		panel_1.add(lblNewLabel_1);
 
 		JLabel lblNewLabel_2 = new JLabel("ALWAYS CARING , ALWAYS HERE");
-		lblNewLabel_2.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+		lblNewLabel_2.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		lblNewLabel_2.setBounds(351, 77, 290, 30);
 		panel_1.add(lblNewLabel_2);
 
@@ -119,7 +137,7 @@ public class Cart extends JFrame {
 		btnNewButton.setBorderPainted(false);
 		btnNewButton.setBackground(new Color(0, 255, 255));
 		btnNewButton.setForeground(new Color(0, 0, 0));
-		btnNewButton.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 21));
+		btnNewButton.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 21));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				JOptionPane.showMessageDialog(null, "YOUR ORDER HAS BEEN CONFIRMED");
@@ -131,7 +149,7 @@ public class Cart extends JFrame {
 
 			}
 		});
-		btnNewButton.setBounds(695, 689, 169, 43);
+		btnNewButton.setBounds(630, 689, 169, 43);
 		contentPane.add(btnNewButton);
 		
 		JButton btnCancelOrderNow = new JButton("CANCEL ORDER  NOW");
@@ -149,13 +167,18 @@ public class Cart extends JFrame {
 			}
 		});
 		btnCancelOrderNow.setForeground(Color.BLACK);
-		btnCancelOrderNow.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 21));
+		btnCancelOrderNow.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 21));
 		btnCancelOrderNow.setFocusTraversalPolicyProvider(true);
 		btnCancelOrderNow.setFocusCycleRoot(true);
 		btnCancelOrderNow.setBorderPainted(false);
 		btnCancelOrderNow.setBackground(Color.CYAN);
-		btnCancelOrderNow.setBounds(71, 689, 255, 43);
+		btnCancelOrderNow.setBounds(149, 689, 255, 43);
 		contentPane.add(btnCancelOrderNow);
+		
+		JLabel lblNewLabel_4 = new JLabel("");
+		lblNewLabel_4.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\vaccine\\water-1330252_1280.jpg"));
+		lblNewLabel_4.setBounds(-12, 127, 948, 648);
+		contentPane.add(lblNewLabel_4);
 	}
 
 	/**
