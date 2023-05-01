@@ -91,7 +91,10 @@ public class VaccineBooking extends JFrame {
 		contentPane.add(lblNewLabel);
 		
 		phno = new JTextField();
-		phno.setBounds(390, 208, 177, 23);
+		phno.setBorder(new MatteBorder(0, 0, 2, 0, (Color) new Color(0, 0, 0)));
+		phno.setOpaque(false);
+		phno.setFont(new Font("Tahoma", Font.BOLD, 16));
+		phno.setBounds(390, 198, 177, 34);
 		contentPane.add(phno);
 		phno.setColumns(10);
 		
@@ -108,7 +111,7 @@ public class VaccineBooking extends JFrame {
 		
 		JRadioButton rdbtnNewRadioButton_1 = new JRadioButton("Covaxin");
 		rdbtnNewRadioButton_1.setFont(new Font("Tahoma", Font.BOLD, 13));
-		rdbtnNewRadioButton_1.setBounds(392, 313, 105, 23);
+		rdbtnNewRadioButton_1.setBounds(392, 313, 105, 25);
 		contentPane.add(rdbtnNewRadioButton_1);
 		
 		ButtonGroup group = new ButtonGroup();
@@ -116,27 +119,30 @@ public class VaccineBooking extends JFrame {
 		group.add(rdbtnNewRadioButton);
 		
 		JLabel pno_error = new JLabel("New label");
+		pno_error.setFont(new Font("Tahoma", Font.BOLD, 13));
 		pno_error.setForeground(Color.RED);
-		pno_error.setBounds(575, 212, 163, 17);
+		pno_error.setBounds(516, 224, 163, 44);
 		pno_error.setVisible(false);
 		contentPane.add(pno_error);
 		
 		JLabel lblNewLabel_5 = new JLabel("*Select Center");
+		lblNewLabel_5.setFont(new Font("Tahoma", Font.BOLD, 15));
 		lblNewLabel_5.setForeground(Color.RED);
-		lblNewLabel_5.setBounds(567, 382, 116, 14);
+		lblNewLabel_5.setBounds(505, 374, 116, 14);
 		lblNewLabel_5.setVisible(false);
 		contentPane.add(lblNewLabel_5);
 		
 		JLabel vaccine_error1 = new JLabel("New label");
+		vaccine_error1.setFont(new Font("Tahoma", Font.BOLD, 13));
 		vaccine_error1.setForeground(Color.RED);
-		vaccine_error1.setBounds(529, 279, 116, 14);
+		vaccine_error1.setBounds(505, 279, 156, 44);
 		vaccine_error1.setVisible(false);
 		contentPane.add(vaccine_error1);
 		
 		JComboBox comboBox = new JComboBox();
-		comboBox.setFont(new Font("Tahoma", Font.BOLD, 13));
+		comboBox.setFont(new Font("Tahoma", Font.BOLD, 15));
 		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Select Center", "CNS Hospital", "Shiv Santoshi Hospital", "CIVIL Hospital", ""}));
-		comboBox.setBounds(390, 371, 135, 34);
+		comboBox.setBounds(391, 393, 177, 34);
 		contentPane.add(comboBox);
 		
 		
@@ -220,19 +226,19 @@ public class VaccineBooking extends JFrame {
 			}
 			
 		});
-		btnNewButton.setBounds(367, 462, 116, 49);
+		btnNewButton.setBounds(340, 510, 116, 49);
 		contentPane.add(btnNewButton);
 		
 		
 		
 		JLabel lblNewLabel_3 = new JLabel("Select Your Center ");
 		lblNewLabel_3.setFont(new Font("Tahoma", Font.BOLD, 16));
-		lblNewLabel_3.setBounds(176, 380, 168, 14);
+		lblNewLabel_3.setBounds(176, 402, 168, 14);
 		contentPane.add(lblNewLabel_3);
 		
 		JLabel lblNewLabel_4 = new JLabel("Vaccine Booking");
-		lblNewLabel_4.setFont(new Font("Arial", Font.BOLD, 17));
-		lblNewLabel_4.setBounds(351, 109, 141, 34);
+		lblNewLabel_4.setFont(new Font("Arial", Font.BOLD, 19));
+		lblNewLabel_4.setBounds(340, 83, 166, 49);
 		contentPane.add(lblNewLabel_4);
 		
 		JLabel lblNewLabel_4_1 = new JLabel("");
@@ -240,7 +246,7 @@ public class VaccineBooking extends JFrame {
 		lblNewLabel_4_1.setBorder(new MatteBorder(3, 3, 3, 3, (Color) new Color(0, 0, 0)));
 		lblNewLabel_4_1.setIcon(null);
 		lblNewLabel_4_1.setFont(new Font("Times New Roman", Font.BOLD, 16));
-		lblNewLabel_4_1.setBounds(321, 104, 193, 49);
+		lblNewLabel_4_1.setBounds(323, 83, 193, 49);
 		contentPane.add(lblNewLabel_4_1);
 		
 		JLabel lblNewLabel_4_1_1 = new JLabel("");
@@ -253,10 +259,11 @@ public class VaccineBooking extends JFrame {
 			}
 		});
 		lblNewLabel_4_1_1.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\vaccine\\back.jpg"));
-		lblNewLabel_4_1_1.setBounds(691, 553, 47, 44);
+		lblNewLabel_4_1_1.setBounds(614, 570, 47, 44);
 		contentPane.add(lblNewLabel_4_1_1);
 		
 		JLabel lblNewLabel_6 = new JLabel("");
+		lblNewLabel_6.setFont(new Font("Tahoma", Font.BOLD, 14));
 		lblNewLabel_6.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\vaccine\\VaccBook (Custom).jpg"));
 		lblNewLabel_6.setBounds(0, 55, 926, 595);
 		contentPane.add(lblNewLabel_6);

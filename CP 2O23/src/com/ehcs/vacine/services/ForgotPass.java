@@ -82,7 +82,6 @@ public class ForgotPass extends JFrame {
 		lblNewLabel_15.setBounds(160, 12, 142, 55);
 		panel.add(lblNewLabel_15);
 		lblNewLabel_15.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 20));
-		lblNewLabel_15.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
 		
 		JLabel lblNewLabel_6_2 = new JLabel("Enter New PassWord\r\n");
 		lblNewLabel_6_2.setFont(new Font("Tahoma", Font.BOLD, 15));
@@ -90,6 +89,8 @@ public class ForgotPass extends JFrame {
 		panel.add(lblNewLabel_6_2);
 		
 		passwordField = new JPasswordField();
+		passwordField.setOpaque(false);
+		passwordField.setBorder(new MatteBorder(0, 0, 2, 0, (Color) new Color(0, 0, 0)));
 		passwordField.setBounds(247, 145, 152, 20);
 		panel.add(passwordField);
 		
@@ -99,6 +100,8 @@ public class ForgotPass extends JFrame {
 		panel.add(lblNewLabel_6_3);
 		
 		passwordField_1 = new JPasswordField();
+		passwordField_1.setOpaque(false);
+		passwordField_1.setBorder(new MatteBorder(0, 0, 2, 0, (Color) new Color(0, 0, 0)));
 		passwordField_1.setBounds(247, 229, 152, 20);
 		panel.add(passwordField_1);
 		
@@ -183,12 +186,16 @@ public class ForgotPass extends JFrame {
 		contentPane.add(lblNewLabel_6_1);
 		
 		phnoo = new JTextField();
+		phnoo.setOpaque(false);
+		phnoo.setBorder(new MatteBorder(0, 0, 2, 0, (Color) new Color(0, 0, 0)));
 		phnoo.setText(db.EMAIL);
 		phnoo.setColumns(10);
 		phnoo.setBounds(432, 128, 145, 33);
 		contentPane.add(phnoo);
 		
 		textOTP = new JTextField();
+		textOTP.setOpaque(false);
+		textOTP.setBorder(new MatteBorder(0, 0, 2, 0, (Color) new Color(0, 0, 0)));
 		textOTP.setColumns(10);
 		textOTP.setBounds(432, 187, 145, 28);
 		contentPane.add(textOTP);

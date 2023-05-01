@@ -98,53 +98,66 @@ public int OTP=0;
 		lblNewLabel_1_1.setFont(new Font("Tahoma", Font.BOLD, 15));
 		
 		fname = new JTextField();
+		fname.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		fname.setBorder(new MatteBorder(0, 0, 2, 0, (Color) new Color(0, 0, 0)));
+		fname.setOpaque(false);
+
 		fname.setBounds(250, 168, 159, 20);
 		fname.setColumns(10);
-		fname.setText(db.fname);
 		
 		JLabel lblNewLabel_1_3_1 = new JLabel(" Phone No");
-		lblNewLabel_1_3_1.setBounds(143, 210, 93, 28);
+		lblNewLabel_1_3_1.setBounds(143, 237, 93, 28);
 		lblNewLabel_1_3_1.setFont(new Font("Tahoma", Font.BOLD, 15));
 		
 		phno = new JTextField();
-		phno.setBounds(250, 215, 159, 20);
+		phno.setOpaque(false);
+		phno.setBorder(new MatteBorder(0, 0, 2, 0, (Color) new Color(0, 0, 0)));
+		phno.setBounds(250, 245, 159, 20);
 		phno.setColumns(10);
 		phno.setText(db.PHONE);
 		
 		JLabel lblNewLabel_1_3_2 = new JLabel(" DOB :");
-		lblNewLabel_1_3_2.setBounds(143, 268, 93, 28);
+		lblNewLabel_1_3_2.setBounds(143, 308, 93, 28);
 		lblNewLabel_1_3_2.setFont(new Font("Tahoma", Font.BOLD, 15));
 		
 		dob = new JTextField();
-		dob.setBounds(250, 273, 159, 20);
+		dob.setOpaque(false);
+		dob.setBorder(new MatteBorder(0, 0, 2, 0, (Color) new Color(0, 0, 0)));
+		dob.setBounds(250, 308, 159, 20);
 		dob.setColumns(10);
 		dob.setText(db.dob);
 		
 		JLabel lblNewLabel_1 = new JLabel("Last Name");
-		lblNewLabel_1.setBounds(473, 170, 93, 28);
+		lblNewLabel_1.setBounds(473, 169, 93, 28);
 		lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 15));
 		
 		lname = new JTextField();
+		lname.setOpaque(false);
+		lname.setBorder(new MatteBorder(0, 0, 2, 0, (Color) new Color(0, 0, 0)));
 		lname.setBounds(577, 168, 159, 20);
 		lname.setColumns(10);
 		lname.setText(db.lname);
 		
 		JLabel lblNewLabel_1_3 = new JLabel(" Email ID");
-		lblNewLabel_1_3.setBounds(473, 210, 93, 28);
+		lblNewLabel_1_3.setBounds(473, 237, 93, 28);
 		lblNewLabel_1_3.setFont(new Font("Tahoma", Font.BOLD, 15));
 		
 		email = new JTextField();
-		email.setBounds(577, 215, 159, 20);
+		email.setOpaque(false);
+		email.setBorder(new MatteBorder(0, 0, 2, 0, (Color) new Color(0, 0, 0)));
+		email.setBounds(577, 245, 159, 20);
 		email.setColumns(10);
 		email.setText(db.EMAIL);
 		
 		JLabel lblNewLabel_7 = new JLabel("Address");
-		lblNewLabel_7.setBounds(473, 267, 93, 26);
+		lblNewLabel_7.setBounds(473, 308, 93, 26);
 		lblNewLabel_7.setForeground(new Color(0, 0, 0));
 		lblNewLabel_7.setFont(new Font("Tahoma", Font.BOLD, 15));
 		
 		add = new JTextField();
-		add.setBounds(577, 273, 159, 20);
+		add.setOpaque(false);
+		add.setBorder(new MatteBorder(0, 0, 2, 0, (Color) new Color(0, 0, 0)));
+		add.setBounds(577, 308, 159, 20);
 		contentPane.add(add);
 		add.setColumns(10);
 		add.setText(db.ADDRESS);
@@ -160,7 +173,7 @@ public int OTP=0;
 		contentPane.add(email);
 		contentPane.add(lblNewLabel_7);
 		JButton btnNewButton = new JButton("Submit");
-		btnNewButton.setBounds(356, 384, 128, 35);
+		btnNewButton.setBounds(364, 433, 128, 35);
 		contentPane.add(btnNewButton);
 		btnNewButton.setBackground(Color.BLUE);
 		btnNewButton.setForeground(Color.WHITE);

@@ -78,7 +78,6 @@ public class Registration extends JFrame {
 		
 		JLabel lblNewLabel_8 = new JLabel(" Registration");
 		lblNewLabel_8.setOpaque(true);
-		lblNewLabel_8.setIcon(new ImageIcon("C:\\Users\\sumit\\Downloads\\White_full.png"));
 		lblNewLabel_8.setFont(new Font("Arial Black", Font.BOLD, 21));
 		lblNewLabel_8.setBorder(new LineBorder(new Color(0, 0, 0), 1, true));
 		lblNewLabel_8.setBounds(374, 83, 169, 55);
@@ -115,6 +114,8 @@ public class Registration extends JFrame {
 		contentPane.add(separator_3);
 		
 		fname = new JTextField();
+		fname.setFont(new Font("Tahoma", Font.BOLD, 12));
+		fname.setOpaque(false);
 		fname.setBounds(245, 175, 159, 28);
 		contentPane.add(fname);
 		fname.setBackground(new Color(255, 255, 255));
@@ -128,7 +129,7 @@ public class Registration extends JFrame {
 		
 		JLabel lblNewLabel_2 = new JLabel("* Enter Valid First Name");
 		lblNewLabel_2.setFont(new Font("Tahoma", Font.BOLD, 12));
-		lblNewLabel_2.setBounds(290, 207, 134, 17);
+		lblNewLabel_2.setBounds(290, 207, 159, 17);
 		contentPane.add(lblNewLabel_2);
 		lblNewLabel_2.setForeground(Color.RED);
 		
@@ -138,6 +139,8 @@ public class Registration extends JFrame {
 		lblNewLabel_1_3_1.setFont(new Font("Tahoma", Font.BOLD, 16));
 		
 		textField_4 = new JTextField();
+		textField_4.setFont(new Font("Tahoma", Font.BOLD, 12));
+		textField_4.setOpaque(false);
 		textField_4.setBorder(new MatteBorder(0, 0, 2, 0, (Color) new Color(0, 0, 0)));
 		textField_4.setBounds(245, 244, 159, 28);
 		contentPane.add(textField_4);
@@ -166,8 +169,8 @@ public class Registration extends JFrame {
 		lblNewLabel_1_3_2_1.setFont(new Font("Tahoma", Font.BOLD, 16));
 		
 		
-		
 		JComboBox comboBox = new JComboBox();
+		comboBox.setOpaque(false);
 		comboBox.setFont(new Font("Tahoma", Font.BOLD, 12));
 		comboBox.setBorder(new MatteBorder(0, 0, 0, 0, (Color) new Color(0, 0, 0)));
 		comboBox.setBounds(245, 372, 169, 28);
@@ -176,7 +179,7 @@ public class Registration extends JFrame {
 		
 		JLabel lblNewLabel_3 = new JLabel("* Select Apropriate Gender");
 		lblNewLabel_3.setFont(new Font("Tahoma", Font.BOLD, 12));
-		lblNewLabel_3.setBounds(287, 404, 147, 14);
+		lblNewLabel_3.setBounds(287, 404, 162, 14);
 		contentPane.add(lblNewLabel_3);
 		lblNewLabel_3.setForeground(Color.RED);
 		
@@ -186,6 +189,8 @@ public class Registration extends JFrame {
 		lblNewLabel_1_3_2_1_2.setFont(new Font("Tahoma", Font.BOLD, 16));
 		
 		passwordField = new JPasswordField();
+		passwordField.setFont(new Font("Tahoma", Font.BOLD, 12));
+		passwordField.setOpaque(false);
 		passwordField.setBorder(new MatteBorder(0, 0, 2, 0, (Color) new Color(0, 0, 0)));
 		passwordField.setBounds(249, 443, 159, 28);
 		contentPane.add(passwordField);
@@ -205,7 +210,7 @@ public class Registration extends JFrame {
 		btnSubmit.setBackground(Color.BLUE);
 		
 		JButton btnReset = new JButton("Reset");
-		btnReset.setBounds(508, 566, 129, 43);
+		btnReset.setBounds(508, 567, 147, 43);
 		contentPane.add(btnReset);
 		btnReset.setForeground(Color.WHITE);
 		btnReset.setBorderPainted(false);
@@ -218,14 +223,16 @@ public class Registration extends JFrame {
 		lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 16));
 		
 		lname = new JTextField();
+		lname.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lname.setOpaque(false);
 		lname.setBorder(new MatteBorder(0, 0, 2, 0, (Color) new Color(0, 0, 0)));
-		lname.setBounds(626, 175, 159, 28);
+		lname.setBounds(626, 169, 159, 28);
 		contentPane.add(lname);
 		lname.setColumns(10);
 		
 		JLabel lblNewLabel_2_2 = new JLabel("* Enter Valid Last Name");
 		lblNewLabel_2_2.setFont(new Font("Tahoma", Font.BOLD, 12));
-		lblNewLabel_2_2.setBounds(626, 207, 120, 17);
+		lblNewLabel_2_2.setBounds(605, 207, 159, 17);
 		contentPane.add(lblNewLabel_2_2);
 		lblNewLabel_2_2.setForeground(Color.RED);
 		
@@ -235,6 +242,8 @@ public class Registration extends JFrame {
 		lblNewLabel_1_3.setFont(new Font("Tahoma", Font.BOLD, 16));
 		
 		textField_3 = new JTextField();
+		textField_3.setFont(new Font("Tahoma", Font.BOLD, 12));
+		textField_3.setOpaque(false);
 		textField_3.setBorder(new MatteBorder(0, 0, 2, 0, (Color) new Color(0, 0, 0)));
 		textField_3.setBounds(626, 244, 159, 28);
 		contentPane.add(textField_3);
@@ -252,6 +261,8 @@ public class Registration extends JFrame {
 		lblNewLabel_1_3_2_1_1.setFont(new Font("Tahoma", Font.BOLD, 16));
 		
 		textField_6 = new JTextField();
+		textField_6.setFont(new Font("Tahoma", Font.BOLD, 12));
+		textField_6.setOpaque(false);
 		textField_6.setBorder(new MatteBorder(0, 0, 2, 0, (Color) new Color(0, 0, 0)));
 		textField_6.setBounds(626, 311, 159, 28);
 		contentPane.add(textField_6);
@@ -270,6 +281,8 @@ public class Registration extends JFrame {
 		
 
 		textField_8 = new JTextField();
+		textField_8.setFont(new Font("Tahoma", Font.BOLD, 12));
+		textField_8.setOpaque(false);
 		textField_8.setBorder(new MatteBorder(0, 0, 2, 0, (Color) new Color(0, 0, 0)));
 		textField_8.setBounds(626, 375, 159, 25);
 		contentPane.add(textField_8);
@@ -287,6 +300,8 @@ public class Registration extends JFrame {
 		lblNewLabel_1_3_2_1_2_1.setFont(new Font("Tahoma", Font.BOLD, 16));
 		
 		passwordField_1 = new JPasswordField();
+		passwordField_1.setFont(new Font("Tahoma", Font.BOLD, 12));
+		passwordField_1.setOpaque(false);
 		passwordField_1.setBorder(new MatteBorder(0, 0, 2, 0, (Color) new Color(0, 0, 0)));
 		passwordField_1.setBounds(636, 440, 169, 27);
 		contentPane.add(passwordField_1);
@@ -299,7 +314,7 @@ public class Registration extends JFrame {
 		
 		JLabel lblNewLabel_2_5 = new JLabel("* Select Correct Date");
 		lblNewLabel_2_5.setFont(new Font("Tahoma", Font.BOLD, 12));
-		lblNewLabel_2_5.setBounds(301, 338, 103, 20);
+		lblNewLabel_2_5.setBounds(301, 338, 138, 20);
 		contentPane.add(lblNewLabel_2_5);
 		lblNewLabel_2_5.setForeground(Color.RED);
 		

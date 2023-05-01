@@ -102,6 +102,7 @@ public class Login extends JFrame {
 		panel.add(lblNewLabel_7);
 		
 		passwordField = new JPasswordField();
+		passwordField.setFont(new Font("Tahoma", Font.BOLD, 13));
 		passwordField.setBounds(214, 152, 241, 29);
 		panel.add(passwordField);
 		passwordField.setOpaque(false);
@@ -114,6 +115,7 @@ public class Login extends JFrame {
 		separator.setBorder(new LineBorder(new Color(0, 0, 0)));
 		
 		txtUserid = new JTextField();
+		txtUserid.setFont(new Font("Tahoma", Font.BOLD, 15));
 		txtUserid.setBounds(214, 68, 241, 31);
 		panel.add(txtUserid);
 		txtUserid.setBorder(new MatteBorder(0, 0, 2, 0, (Color) new Color(0, 0, 0)));
@@ -136,12 +138,14 @@ public class Login extends JFrame {
 		lblNewLabel_3_1.setForeground(Color.RED);
 		
 		JLabel lblNewLabel_3 = new JLabel("* This Aadhar No is Not Registered ");
-		lblNewLabel_3.setBounds(214, 55, 170, 14);
+		lblNewLabel_3.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblNewLabel_3.setBounds(184, 21, 271, 14);
 		panel.add(lblNewLabel_3);
 		lblNewLabel_3.setForeground(Color.RED);
 		
 		JLabel lblNewLabel_8 = new JLabel("* Enter Aadhar No");
-		lblNewLabel_8.setBounds(312, 55, 93, 14);
+		lblNewLabel_8.setFont(new Font("Tahoma", Font.BOLD, 13));
+		lblNewLabel_8.setBounds(273, 27, 126, 29);
 		panel.add(lblNewLabel_8);
 		lblNewLabel_8.setForeground(Color.RED);
 		lblNewLabel_8.setVisible(false);
