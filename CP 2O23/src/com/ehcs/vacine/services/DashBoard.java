@@ -424,9 +424,9 @@ public class DashBoard extends JFrame {
 		contentPane.add(lblNewLabel_12);
 		if(db.FIRST_DOSE==null && db.SECOND_DOSE==null && db.BOOSTER_DOSE==null)
 		{
-			lblNewLabel_11.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\X.png"));
-			lblNewLabel_11_1.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\X.png"));
-			lblNewLabel_11_1_1.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\X.png"));
+			lblNewLabel_11.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\vacine\\X.png"));
+			lblNewLabel_11_1.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\vacine\\X.png"));
+			lblNewLabel_11_1_1.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\vacine\\X.png"));
 		    lblNewLabel_10_2_1.setText("    Not Taken ");
 		    lblNewLabel_10_2_1.setForeground(Color.RED);
 		    lblNewLabel_10_2.setText("    Not Taken ");
@@ -439,12 +439,12 @@ public class DashBoard extends JFrame {
 
 		    btnNewButton.setText("BOOK YOUR FIRST VACCINE");
 		}
-		else if(db.FIRST_DOSE.equals("Taken") && (db.SECOND_DOSE==null || db.SECOND_DOSE=="")) {
+		else if(db.FIRST_DOSE.equals("Taken") && db.SECOND_DOSE==null ) {
 			lblNewLabel_11.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\vaccine\\right.png"));
 			lblNewLabel_10_2.setText("Successfully Taken ");
 			lblNewLabel_10_2.setForeground(Color.BLACK);
-			lblNewLabel_11_1.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\X.png"));
-			lblNewLabel_11_1_1.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\X.png"));
+			lblNewLabel_11_1.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\vacine\\X.png"));
+			lblNewLabel_11_1_1.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\vacine\\X.png"));
 		    lblNewLabel_10_2_1.setText("    Not Taken ");
 		    lblNewLabel_10_2_1.setForeground(Color.RED);
 		    lblNewLabel_10_2_1_1.setText("    Not Taken ");
@@ -454,10 +454,10 @@ public class DashBoard extends JFrame {
 		    lblNewLabel_9_1_1.setVisible(false);
 		    btnNewButton.setText("BOOK YOUR SECOND VACCINE");
 		}
-		else if(db.FIRST_DOSE.equals("Taken")&&db.SECOND_DOSE.equals("Taken") && (db.BOOSTER_DOSE==null || db.BOOSTER_DOSE=="")) {
+		else if(db.FIRST_DOSE.equals("Taken")&&db.SECOND_DOSE.equals("Taken") && db.BOOSTER_DOSE==null ) {
 			lblNewLabel_11.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\vaccine\\right.png"));			
 			lblNewLabel_11_1.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\vaccine\\right.png"));
-			lblNewLabel_11_1_1.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\X.png"));
+			lblNewLabel_11_1_1.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\vacine\\X.png"));
 			lblNewLabel_10_2.setText("Successfully Taken ");
 			lblNewLabel_10_2.setForeground(Color.BLACK);
 		    lblNewLabel_10_2_1.setText("Successfully Taken ");
@@ -469,23 +469,23 @@ public class DashBoard extends JFrame {
 		    lblNewLabel_9_1_1.setVisible(false);
 		    btnNewButton.setText("BOOK YOUR Booster Dose");
 		}
-		else if(db.FIRST_DOSE.equals("Taken")&&db.SECOND_DOSE.equals("Taken") && db.BOOSTER_DOSE.equals("Taken")) {
-			lblNewLabel_11.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\vaccine\\right.png"));
-			lblNewLabel_11_1.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\vaccine\\right.png"));
-			lblNewLabel_11_1_1.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\right.png"));
-		    lblNewLabel_10_2_1.setText("Successfully Taken ");
-		    lblNewLabel_10_2.setText("Successfully Taken ");
-			lblNewLabel_10_2.setForeground(Color.BLACK);
-		    lblNewLabel_10_2_1.setForeground(Color.BLACK);
-		    lblNewLabel_10_2_1_1.setText("Successfully Taken ");
-		    lblNewLabel_10_2_1_1.setForeground(Color.BLACK);
-		    lblNewLabel_9.setText("Taken on "+db.FIRST_DOSE_DATE);
-		    lblNewLabel_9_1.setText("Taken on "+db.SECON_DOSE_DATE);
-		    lblNewLabel_9_1_1.setText("Taken on "+db.BOOSTER_DOSE_DATE);
-		    btnNewButton.disable();
-		}
-		
-		 if(db.FIRST_DOSE.equals("Taken") && db.SECOND_DOSE.equals("Taken") || db.BOOSTER_DOSE.equals("Taken")){			
+//		else if(db.FIRST_DOSE.equals("Taken")&&db.SECOND_DOSE.equals("Taken") && db.BOOSTER_DOSE.equals("Taken")) {
+//			lblNewLabel_11.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\vaccine\\right.png"));
+//			lblNewLabel_11_1.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\vaccine\\right.png"));
+//			lblNewLabel_11_1_1.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\vaccine\\right.png"));
+//		    lblNewLabel_10_2_1.setText("Successfully Taken ");
+//		    lblNewLabel_10_2.setText("Successfully Taken ");
+//			lblNewLabel_10_2.setForeground(Color.BLACK);
+//		    lblNewLabel_10_2_1.setForeground(Color.BLACK);
+//		    lblNewLabel_10_2_1_1.setText("Successfully Taken ");
+//		    lblNewLabel_10_2_1_1.setForeground(Color.BLACK);
+//		    lblNewLabel_9.setText("Taken on "+db.FIRST_DOSE_DATE);
+//		    lblNewLabel_9_1.setText("Taken on "+db.SECON_DOSE_DATE);
+//		    lblNewLabel_9_1_1.setText("Taken on "+db.BOOSTER_DOSE_DATE);
+//		    btnNewButton.disable();
+//		}
+//		
+		else if(db.FIRST_DOSE.equals("Taken") && db.SECOND_DOSE.equals("Taken") && db.BOOSTER_DOSE.equals("Taken")){			
 			lblNewLabel_11.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\vaccine\\right.png"));
 			lblNewLabel_11_1.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\vaccine\\right.png"));
 			lblNewLabel_11_1_1.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\vaccine\\right.png"));
@@ -526,7 +526,7 @@ public class DashBoard extends JFrame {
 			contentPane.add(btnNewButton10);
 		}
 		
-	}
+}
 	private static void addPopup(Component component, final JPopupMenu popup) {
 		component.addMouseListener(new MouseAdapter() {
 			public void mousePressed(MouseEvent e) {
