@@ -41,6 +41,7 @@ public class Start_Page extends JFrame {
 	public Start_Page() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(300, 0,1011,768);
+		setTitle("HomePage");
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);

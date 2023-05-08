@@ -331,7 +331,7 @@ public int OTP=0;
 				
 				if(a==0) {
 					 c = db.UpdateDetails(al , Adhar);
-					JOptionPane.showMessageDialog(null, c);
+//					JOptionPane.showMessageDialog(null, c);
 					}
 					if(c==1) {
 						JOptionPane.showMessageDialog(null, "Succesfully Submited");

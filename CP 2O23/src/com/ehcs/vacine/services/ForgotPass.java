@@ -245,13 +245,13 @@ public class ForgotPass extends JFrame {
 			else {
 
 				otpmessage=otp.generateOTP(5);
-				boolean b=SendOTP.sendOTP("Hey this message is send by Sumit using Java Code. Your OTP is :"+ otpmessage ,db.EMAIL,"Forgot Pass OTP");
+				boolean b=SendOTP.sendOTP("\t\t\t\t E-HEALTH CARE SERVICES \\n\\n\\n .\n This otp is sent for reset your password \n Your OTP is :"+ otpmessage ,db.EMAIL,"Forgot Pass OTP");
 				if(b==false) {
 					JOptionPane.showMessageDialog(null, "Unsuccessful To Send An OTP  ");
 				}else {
 						 JOptionPane.showMessageDialog(null, "OTP Sent ");
 				}
-				 JOptionPane.showMessageDialog(null, "OTP Sent ");
+//				 JOptionPane.showMessageDialog(null, "OTP Sent ");
 			}
 			}
 		});

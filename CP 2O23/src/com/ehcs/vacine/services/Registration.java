@@ -66,6 +66,7 @@ public class Registration extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(300, 70, 940, 687);
 		contentPane = new JPanel();
+		setTitle("Sign-Up");
 		contentPane.setSize(new Dimension(900, 700));
 		contentPane.setBackground(Color.WHITE);
 		contentPane.setForeground(Color.BLACK);

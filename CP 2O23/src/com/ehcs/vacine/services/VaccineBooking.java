@@ -209,7 +209,27 @@ public class VaccineBooking extends JFrame {
 				   DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd");  
 				   LocalDateTime now = LocalDateTime.now(); 
 				Db.getDetails( Adhar);
-				boolean b=SendOTP.sendOTP("Dear "+Db.name + " Your Vaccine Is Successfully Booked  on : "+dtf.format(now) ,Db.EMAIL,"Vaccine Status");
+				String vaccine_status ="";
+				int vs = 0;
+				if (Db.FIRST_DOSE==null)
+				{
+					vaccine_status = " First Dose ";
+					vs=1;
+					
+				}
+				else if (Db.FIRST_DOSE=="Taken" && Db.SECOND_DOSE==null)
+				{
+					vaccine_status = " Second Dose ";
+					vs=2;
+
+				}
+				else if (Db.FIRST_DOSE=="Taken" && Db.SECOND_DOSE=="Taken" && Db.BOOSTER_DOSE==null)
+				{
+					vaccine_status = " Booster Dose ";
+					vs = 3;
+
+				}
+				boolean b=SendOTP.sendOTP("\t\t\t\t E-HEALTH CARE SERVICES \n\n\nDear "+Db.name + ",\n\n\t\t Your Vaccine Is Successfully Booked.\n\n\t\t Booking Date: "+dtf.format(now) ,Db.EMAIL,"Vaccine Status");
 				if(b==false) {
 					JOptionPane.showMessageDialog(null, "Unsuccessful To Send An OTP  ");
 				}else {
