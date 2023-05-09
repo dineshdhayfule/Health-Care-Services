@@ -142,7 +142,7 @@ public class VaccineBooking extends JFrame {
 		JComboBox comboBox = new JComboBox();
 		comboBox.setFont(new Font("Tahoma", Font.BOLD, 15));
 		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Select Center", "CNS Hospital", "Shiv Santoshi Hospital", "CIVIL Hospital", ""}));
-		comboBox.setBounds(391, 393, 177, 34);
+		comboBox.setBounds(391, 393, 230, 34);
 		contentPane.add(comboBox);
 		
 		

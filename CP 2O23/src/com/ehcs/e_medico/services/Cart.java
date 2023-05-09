@@ -107,7 +107,7 @@ public class Cart extends JFrame {
 		JLabel lblNewLabel = new JLabel("Total Price ");
 		lblNewLabel.setBorder(new LineBorder(new Color(0, 0, 0), 3));
 		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 21));
-		lblNewLabel.setBounds(149, 626, 113, 36);
+		lblNewLabel.setBounds(149, 626, 137, 36);
 		contentPane.add(lblNewLabel);
 
 		JPanel panel_1 = new JPanel();
@@ -149,7 +149,7 @@ public class Cart extends JFrame {
 
 			}
 		});
-		btnNewButton.setBounds(630, 689, 169, 43);
+		btnNewButton.setBounds(599, 689, 200, 43);
 		contentPane.add(btnNewButton);
 		
 		JButton btnCancelOrderNow = new JButton("CANCEL ORDER  NOW");
@@ -172,7 +172,7 @@ public class Cart extends JFrame {
 		btnCancelOrderNow.setFocusCycleRoot(true);
 		btnCancelOrderNow.setBorderPainted(false);
 		btnCancelOrderNow.setBackground(Color.CYAN);
-		btnCancelOrderNow.setBounds(149, 689, 255, 43);
+		btnCancelOrderNow.setBounds(149, 689, 291, 43);
 		contentPane.add(btnCancelOrderNow);
 		
 		JLabel lblNewLabel_4 = new JLabel("");

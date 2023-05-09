@@ -103,7 +103,7 @@ public class Login extends JFrame {
 		panel.add(lblNewLabel_7);
 		
 		passwordField = new JPasswordField();
-		passwordField.setFont(new Font("Tahoma", Font.BOLD, 13));
+		passwordField.setFont(new Font("Tahoma", Font.BOLD, 15));
 		passwordField.setBounds(214, 152, 241, 29);
 		panel.add(passwordField);
 		passwordField.setOpaque(false);
@@ -133,8 +133,9 @@ public class Login extends JFrame {
 		panel.add(lblNewLabel_1_1);
 		lblNewLabel_1_1.setFont(new Font("Tahoma", Font.BOLD, 16));
 		
-		JLabel lblNewLabel_3_1 = new JLabel("* Enter Correct Pass");
-		lblNewLabel_3_1.setBounds(332, 128, 107, 14);
+		JLabel lblNewLabel_3_1 = new JLabel("*Enter Correct Password");
+		lblNewLabel_3_1.setFont(new Font("Tahoma", Font.BOLD, 13));
+		lblNewLabel_3_1.setBounds(311, 128, 168, 14);
 		panel.add(lblNewLabel_3_1);
 		lblNewLabel_3_1.setForeground(Color.RED);
 		
@@ -154,6 +155,7 @@ public class Login extends JFrame {
 		lblNewLabel_3_1.setVisible(false);
 		
 		JLabel lblNewLabel_5 = new JLabel("Forgot PassWord");
+		lblNewLabel_5.setFont(new Font("Tahoma", Font.BOLD, 13));
 		lblNewLabel_5.setForeground(Color.BLUE);
 		lblNewLabel_5.setVisible(false);
 		lblNewLabel_5.addMouseListener(new MouseAdapter() {
@@ -164,7 +166,7 @@ public class Login extends JFrame {
 				setVisible(false);
 			}
 		});
-		lblNewLabel_5.setBounds(332, 207, 86, 14);
+		lblNewLabel_5.setBounds(332, 207, 123, 25);
 		panel.add(lblNewLabel_5);
 		
 		

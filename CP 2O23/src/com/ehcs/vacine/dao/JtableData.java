@@ -1,13 +1,12 @@
 package com.ehcs.vacine.dao;
 
-import java.sql.Connection;
+import java.sql.Connection; 
 import net.proteanit.sql.DbUtils;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
 
@@ -44,7 +43,8 @@ public class JtableData {
 } finally {
   try {
  rs.close();
-} catch (SQLException e) { /* ignore */
+} catch (SQLException e) { 
+	/* ignore */
 }
 
 try {

@@ -176,41 +176,42 @@ public class ForgotPass extends JFrame {
 		contentPane.add(lblNewLabel_2);
 		
 		JLabel lblNewLabel_6 = new JLabel("Enter Phone No");
-		lblNewLabel_6.setFont(new Font("Tahoma", Font.BOLD, 17));
-		lblNewLabel_6.setBounds(238, 120, 167, 28);
+		lblNewLabel_6.setFont(new Font("Tahoma", Font.BOLD, 20));
+		lblNewLabel_6.setBounds(238, 120, 167, 41);
 		contentPane.add(lblNewLabel_6);
 		
 		JLabel lblNewLabel_6_1 = new JLabel("Enter OTP ");
-		lblNewLabel_6_1.setFont(new Font("Tahoma", Font.BOLD, 17));
-		lblNewLabel_6_1.setBounds(238, 181, 103, 33);
+		lblNewLabel_6_1.setFont(new Font("Tahoma", Font.BOLD, 20));
+		lblNewLabel_6_1.setBounds(238, 181, 116, 33);
 		contentPane.add(lblNewLabel_6_1);
 		
 		phnoo = new JTextField();
+		phnoo.setFont(new Font("Tahoma", Font.BOLD, 17));
 		phnoo.setOpaque(false);
 		phnoo.setBorder(new MatteBorder(0, 0, 2, 0, (Color) new Color(0, 0, 0)));
-		phnoo.setText(db.EMAIL);
 		phnoo.setColumns(10);
-		phnoo.setBounds(432, 128, 145, 33);
+		phnoo.setBounds(415, 128, 246, 33);
 		contentPane.add(phnoo);
 		
 		textOTP = new JTextField();
+		textOTP.setFont(new Font("Tahoma", Font.BOLD, 14));
 		textOTP.setOpaque(false);
 		textOTP.setBorder(new MatteBorder(0, 0, 2, 0, (Color) new Color(0, 0, 0)));
 		textOTP.setColumns(10);
-		textOTP.setBounds(432, 187, 145, 28);
+		textOTP.setBounds(415, 187, 162, 28);
 		contentPane.add(textOTP);
 		
 		JLabel lblNewLabel = new JLabel("New label");
 		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 13));
 		lblNewLabel.setForeground(Color.RED);
-		lblNewLabel.setBounds(599, 129, 158, 14);
+		lblNewLabel.setBounds(721, 129, 158, 14);
 		lblNewLabel.setVisible(false);
 		contentPane.add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("New label");
 		lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 13));
 		lblNewLabel_1.setForeground(Color.RED);
-		lblNewLabel_1.setBounds(599, 193, 158, 14);
+		lblNewLabel_1.setBounds(673, 192, 158, 14);
 		lblNewLabel_1.setVisible(false);
 		contentPane.add(lblNewLabel_1);
 		
@@ -256,8 +257,8 @@ public class ForgotPass extends JFrame {
 			}
 		});
 		lblNewLabel_8.setForeground(new Color(0, 0, 0));
-		lblNewLabel_8.setFont(new Font("Tahoma", Font.BOLD, 17));
-		lblNewLabel_8.setBounds(349, 250, 115, 43);
+		lblNewLabel_8.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 21));
+		lblNewLabel_8.setBounds(349, 250, 127, 60);
 		contentPane.add(lblNewLabel_8);
 		
 		JLabel lblNewLabel_4 = new JLabel("");

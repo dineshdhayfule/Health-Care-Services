@@ -81,7 +81,7 @@ public class MedicineLists extends JFrame {
 		Diazepam_bt.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 19));
 		Diazepam_bt.setBorderPainted(false);
 		Diazepam_bt.setBackground(Color.WHITE);
-		Diazepam_bt.setBounds(752, 496, 121, 45);
+		Diazepam_bt.setBounds(752, 496, 128, 45);
 		contentPane.add(Diazepam_bt);
 		
 		JLabel Diazepam = new JLabel("Diazepam");
@@ -118,7 +118,7 @@ public class MedicineLists extends JFrame {
 		btnNewButton_3_1.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 19));
 		btnNewButton_3_1.setBorderPainted(false);
 		btnNewButton_3_1.setBackground(Color.WHITE);
-		btnNewButton_3_1.setBounds(734, 198, 162, 45);
+		btnNewButton_3_1.setBounds(725, 198, 171, 45);
 		contentPane.add(btnNewButton_3_1);
 		
 		JLabel Sinarest_1 = new JLabel("medicine");
@@ -259,7 +259,7 @@ public class MedicineLists extends JFrame {
 		JLabel Crocin = new JLabel("Crocin");
 		Crocin.setIcon(new ImageIcon("E:\\\\CPP PROJECT 2023\\\\Images\\\\E Medico\\\\crosin just.png"));
 //		Crocin.setToolTipText("provides symptomatic relief from mild to moderate pain e.g from headache, migraine, toothache and musculoskeletal pain");
-		Crocin.setBounds(428, 21, 121, 150);
+		Crocin.setBounds(412, 21, 121, 150);
 		contentPane.add(Crocin);
 		
 		JButton btnNewButton_2 = new JButton("CROCIN");
@@ -287,13 +287,13 @@ public class MedicineLists extends JFrame {
 
 			}
 		});
-		btnNewButton_2.setBounds(428, 198, 121, 45);
+		btnNewButton_2.setBounds(412, 198, 121, 45);
 		contentPane.add(btnNewButton_2);
 		
 		JLabel Sinarest = new JLabel("Sinarest");
 //		Sinarest.setToolTipText("It is used for reducing fever, cough, cold and symptoms of seasonal allergies such as blocked or stuffed nose, sneezing etc");
 		Sinarest.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\E Medico\\sinarest.jpg"));
-		Sinarest.setBounds(596, 21, 121, 150);
+		Sinarest.setBounds(567, 21, 121, 150);
 		contentPane.add(Sinarest);
 		
 		JButton btnNewButton_3 = new JButton("SINAREST");
@@ -319,7 +319,7 @@ public class MedicineLists extends JFrame {
 
 			}
 		});
-		btnNewButton_3.setBounds(596, 198, 128, 45);
+		btnNewButton_3.setBounds(550, 198, 144, 45);
 		contentPane.add(btnNewButton_3);
 		
 		JLabel Cheston_Cold = new JLabel("Cheston_Cold");
@@ -351,7 +351,7 @@ public class MedicineLists extends JFrame {
 
 			}
 		});
-		btnNewButton_4.setBounds(10, 496, 181, 45);
+		btnNewButton_4.setBounds(-6, 496, 193, 45);
 		contentPane.add(btnNewButton_4);
 		
 		JLabel Azithromycin_Tablet = new JLabel("Azithromycin_Tablet");
@@ -372,7 +372,7 @@ public class MedicineLists extends JFrame {
 				ar1.add("40");
 			}
 		});
-		btnNewButton_5.setBounds(226, 496, 163, 45);
+		btnNewButton_5.setBounds(226, 496, 178, 45);
 		contentPane.add(btnNewButton_5);
 		
 		btnNewButton_5.addMouseListener(new MouseAdapter() {

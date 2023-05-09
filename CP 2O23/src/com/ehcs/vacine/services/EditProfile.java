@@ -94,70 +94,71 @@ public int OTP=0;
 		ArrayList al = new  ArrayList();
 		
 		JLabel lblNewLabel_1_1 = new JLabel("First Name");
-		lblNewLabel_1_1.setBounds(143, 169, 83, 31);
-		lblNewLabel_1_1.setFont(new Font("Tahoma", Font.BOLD, 15));
+		lblNewLabel_1_1.setBounds(133, 202, 93, 31);
+		lblNewLabel_1_1.setFont(new Font("Tahoma", Font.BOLD, 16));
 		
 		fname = new JTextField();
-		fname.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		fname.setFont(new Font("Tahoma", Font.BOLD, 16));
 		fname.setBorder(new MatteBorder(0, 0, 2, 0, (Color) new Color(0, 0, 0)));
 		fname.setOpaque(false);
 
-		fname.setBounds(250, 168, 159, 20);
+		fname.setBounds(250, 202, 159, 27);
 		fname.setColumns(10);
 		
 		JLabel lblNewLabel_1_3_1 = new JLabel(" Phone No");
-		lblNewLabel_1_3_1.setBounds(143, 237, 93, 28);
-		lblNewLabel_1_3_1.setFont(new Font("Tahoma", Font.BOLD, 15));
+		lblNewLabel_1_3_1.setBounds(133, 300, 103, 28);
+		lblNewLabel_1_3_1.setFont(new Font("Tahoma", Font.BOLD, 16));
 		
 		phno = new JTextField();
+		phno.setFont(new Font("Tahoma", Font.BOLD, 16));
 		phno.setOpaque(false);
 		phno.setBorder(new MatteBorder(0, 0, 2, 0, (Color) new Color(0, 0, 0)));
-		phno.setBounds(250, 245, 159, 20);
+		phno.setBounds(250, 300, 159, 28);
 		phno.setColumns(10);
 		phno.setText(db.PHONE);
 		
 		JLabel lblNewLabel_1_3_2 = new JLabel(" DOB :");
-		lblNewLabel_1_3_2.setBounds(143, 308, 93, 28);
+		lblNewLabel_1_3_2.setBounds(143, 409, 93, 28);
 		lblNewLabel_1_3_2.setFont(new Font("Tahoma", Font.BOLD, 15));
 		
 		dob = new JTextField();
+		dob.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 16));
 		dob.setOpaque(false);
 		dob.setBorder(new MatteBorder(0, 0, 2, 0, (Color) new Color(0, 0, 0)));
-		dob.setBounds(250, 308, 159, 20);
+		dob.setBounds(250, 417, 159, 27);
 		dob.setColumns(10);
 		dob.setText(db.dob);
 		
 		JLabel lblNewLabel_1 = new JLabel("Last Name");
-		lblNewLabel_1.setBounds(473, 169, 93, 28);
+		lblNewLabel_1.setBounds(473, 202, 93, 28);
 		lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 15));
 		
 		lname = new JTextField();
+		lname.setFont(new Font("Tahoma", Font.BOLD, 16));
 		lname.setOpaque(false);
 		lname.setBorder(new MatteBorder(0, 0, 2, 0, (Color) new Color(0, 0, 0)));
-		lname.setBounds(577, 168, 159, 20);
+		lname.setBounds(577, 202, 159, 27);
 		lname.setColumns(10);
-		lname.setText(db.lname);
 		
 		JLabel lblNewLabel_1_3 = new JLabel(" Email ID");
-		lblNewLabel_1_3.setBounds(473, 237, 93, 28);
+		lblNewLabel_1_3.setBounds(473, 300, 103, 28);
 		lblNewLabel_1_3.setFont(new Font("Tahoma", Font.BOLD, 15));
 		
 		email = new JTextField();
+		email.setFont(new Font("Tahoma", Font.BOLD, 16));
 		email.setOpaque(false);
 		email.setBorder(new MatteBorder(0, 0, 2, 0, (Color) new Color(0, 0, 0)));
-		email.setBounds(577, 245, 159, 20);
-		email.setColumns(10);
-		email.setText(db.EMAIL);
+		email.setBounds(577, 300, 229, 28);
 		
 		JLabel lblNewLabel_7 = new JLabel("Address");
-		lblNewLabel_7.setBounds(473, 308, 93, 26);
+		lblNewLabel_7.setBounds(473, 409, 93, 26);
 		lblNewLabel_7.setForeground(new Color(0, 0, 0));
 		lblNewLabel_7.setFont(new Font("Tahoma", Font.BOLD, 15));
 		
 		add = new JTextField();
 		add.setOpaque(false);
 		add.setBorder(new MatteBorder(0, 0, 2, 0, (Color) new Color(0, 0, 0)));
-		add.setBounds(577, 308, 159, 20);
+		add.setBounds(577, 409, 229, 68);
 		contentPane.add(add);
 		add.setColumns(10);
 		add.setText(db.ADDRESS);
@@ -173,11 +174,11 @@ public int OTP=0;
 		contentPane.add(email);
 		contentPane.add(lblNewLabel_7);
 		JButton btnNewButton = new JButton("Submit");
-		btnNewButton.setBounds(364, 433, 128, 35);
+		btnNewButton.setBounds(369, 516, 128, 35);
 		contentPane.add(btnNewButton);
 		btnNewButton.setBackground(Color.BLUE);
 		btnNewButton.setForeground(Color.WHITE);
-		btnNewButton.setFont(new Font("Times New Roman", Font.BOLD, 16));
+		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 20));
 		
 		JLabel lblNewLabel_4 = new JLabel("");
 		lblNewLabel_4.setForeground(Color.RED);
@@ -225,7 +226,7 @@ public int OTP=0;
 		
 		JSeparator separator = new JSeparator();
 		separator.setBorder(new MatteBorder(3, 3, 3, 3, (Color) new Color(0, 0, 0)));
-		separator.setBounds(92, 98, 690, 392);
+		separator.setBounds(92, 98, 740, 488);
 		contentPane.add(separator);
 		
 		JLabel lblNewLabel_6 = new JLabel("");
@@ -240,7 +241,7 @@ public int OTP=0;
 			}
 		});
 		lblNewLabel_6.setIcon(new ImageIcon("E:\\CPP PROJECT 2023\\Images\\vaccine\\back.jpg"));
-		lblNewLabel_6.setBounds(737, 516, 47, 44);
+		lblNewLabel_6.setBounds(747, 596, 47, 44);
 		contentPane.add(lblNewLabel_6);
 		
 		JLabel lblNewLabel_8 = new JLabel("New label");

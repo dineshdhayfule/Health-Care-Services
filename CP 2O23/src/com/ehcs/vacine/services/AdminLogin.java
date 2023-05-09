@@ -23,7 +23,7 @@ import javax.swing.border.LineBorder;
 public class AdminLogin extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField textField;
+	private JTextField txtAdmin;
 	private JPasswordField passwordField;
 
 	/**
@@ -76,15 +76,17 @@ public class AdminLogin extends JFrame {
 		lblNewLabel_2.setBounds(267, 310, 110, 45);
 		contentPane.add(lblNewLabel_2);
 		
-		textField = new JTextField();
-		textField.setOpaque(false);
-		textField.setBorder(new MatteBorder(0, 0, 2, 0, (Color) new Color(0, 0, 0)));
-		textField.setBackground(new Color(0, 204, 255));
-		textField.setBounds(405, 207, 213, 45);
-		contentPane.add(textField);
-		textField.setColumns(10);
+		txtAdmin = new JTextField();
+		txtAdmin.setFont(new Font("Tahoma", Font.BOLD, 18));
+		txtAdmin.setOpaque(false);
+		txtAdmin.setBorder(new MatteBorder(0, 0, 2, 0, (Color) new Color(0, 0, 0)));
+		txtAdmin.setBackground(new Color(0, 204, 255));
+		txtAdmin.setBounds(405, 207, 213, 45);
+		contentPane.add(txtAdmin);
+		txtAdmin.setColumns(10);
 		
 		passwordField = new JPasswordField();
+		passwordField.setFont(new Font("Tahoma", Font.BOLD, 18));
 		passwordField.setBounds(407, 310, 213, 44);
 		passwordField.setOpaque(false);
 		contentPane.add(passwordField);
@@ -95,7 +97,7 @@ public class AdminLogin extends JFrame {
 		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 18));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(textField.getText().equals("admin")&&passwordField.getText().equals("1122")) 
+				if(txtAdmin.getText().equals("admin")&&passwordField.getText().equals("1122")) 
 				{
 				DashBoardAdmin da = new DashBoardAdmin();
 				da.setVisible(true);
