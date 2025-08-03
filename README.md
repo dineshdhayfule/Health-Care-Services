@@ -1,5 +1,10 @@
 # Health-Care-Services
 
+
+## Screenshots
+
+Below are some screenshots of the Health-Care-Services application interface:
+
 ![Screenshot (111)](https://github.com/dineshdhayfule/E-Health-Care-Services/assets/109637254/984cc11d-46da-4653-994f-35c073286a72)
 ![Screenshot (112)](https://github.com/dineshdhayfule/E-Health-Care-Services/assets/109637254/b55fe2b2-8077-4c6b-8c68-9c610b1b7ee6)
 ![Screenshot (113)](https://github.com/dineshdhayfule/E-Health-Care-Services/assets/109637254/103c41a6-47af-4077-872a-b556ebbb6cef)
@@ -25,3 +30,60 @@
 ![Screenshot (128)](https://github.com/dineshdhayfule/E-Health-Care-Services/assets/109637254/3ccc4168-9e6b-4652-8760-6c06ee329154)
 ![Screenshot (129)](https://github.com/dineshdhayfule/E-Health-Care-Services/assets/109637254/9d9d9ed0-0e67-4086-8d87-c34095937905)
 ![Screenshot (130)](https://github.com/dineshdhayfule/E-Health-Care-Services/assets/109637254/333f260e-2560-4933-ab73-b25aa2073685)
+
+
+
+---
+
+## Project Description
+
+Health-Care-Services is a comprehensive platform designed to streamline healthcare management, including patient registration, appointment booking, vaccination tracking, and medicine purchasing. The system aims to provide a user-friendly interface for both patients and healthcare providers.
+
+## Features
+
+- Patient registration and login
+- Doctor and staff management
+- Online appointment booking
+- Vaccination scheduling and tracking
+- Medicine catalog and purchase
+- Dashboard for users and admins
+- Secure authentication
+- Visual analytics and reports
+
+## Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/dineshdhayfule/E-Health-Care-Services.git
+   ```
+2. Ensure you have Java installed (JDK 8 or above).
+3. Download required dependencies from the `jar files/` directory if not already present.
+4. Build and run the project using your preferred Java IDE or by running the JAR file:
+   ```sh
+   java -jar E-HEALTH CARE SERVICES.jar
+   ```
+
+## Usage
+
+1. Launch the application.
+2. Register as a new user or log in with existing credentials.
+3. Navigate through the dashboard to access features like booking appointments, viewing vaccination schedules, or purchasing medicines.
+
+## Technologies Used
+
+- Java (Swing for GUI)
+- JDBC (for database connectivity)
+- MySQL or Oracle Database (backend)
+- External JARs: javax.mail, activation, rs2xml, jcalendar, ojdbc14
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request. For major changes, open an issue first to discuss what you would like to change.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For questions or support, contact [dineshdhayfule](mailto:dineshdhayfule@gmail.com) or open an issue in the repository.
